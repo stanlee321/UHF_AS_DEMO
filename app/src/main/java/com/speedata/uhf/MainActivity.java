@@ -62,6 +62,7 @@ public class MainActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         try {
             iuhfService = UHFManager.getUHFService(MainActivity.this);
+            Toast.makeText(MainActivity.this, "IT WORKS ", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(MainActivity.this, "模块不存在", Toast.LENGTH_SHORT).show();
